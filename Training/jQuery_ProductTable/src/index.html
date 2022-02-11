@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>jQuery_ProductTable</title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+  </head>
+  <body>
+    <div id="wrapper">
+      <div id="add_product_form">
+        <label for="product_sku">
+          <span>Product SKU</span>
+          <input type="text" name="product_sku" id="product_sku" />
+        </label>
+        <label for="product_name">
+          <span>Product Name</span>
+          <input type="text" name="product_name" id="product_name" />
+        </label>
+        <label for="product_price">
+          <span>Product Price</span>
+          <input type="text" name="product_price" id="product_price" />
+        </label>
+        <label for="product_quantity">
+          <span>Product Quantity</span>
+          <input type="text" name="product_quantity" id="product_quantity" />
+        </label>
+        <p class="submit">
+          <input
+            type="button"
+            name="add_product"
+            id="add_product"
+            value="Add Product"
+          />
+        </p>
+      </div>
+      <div id="status">
+        <div class="success">
+          Product Added Successfully.<a href="#" class="close">X</a>
+        </div>
+        <div class="error">
+          There is some problem.<a href="#" class="close">X</a>
+        </div>
+      </div>
+      <div id="product_list">
+        <table>
+          <tr>
+            <th>SKU</th>
+            <th>Name</th>
+            <th>Price</th>
+            <th>Quantity</th>
+            <th>Action</th>
+          </tr>
+          <tbody id="table_body"></tbody>
+        </table>
+      </div>
+      <div id="footer">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <script src="script.js"></script>
+      </div>
+    </div>
+  </body>
+</html>
